@@ -1,0 +1,242 @@
+{
+  "plugin-1": {
+    "name": "Awesome Plugin 1",
+    "author": "developerX",
+    "icon": "magic",
+    "descriptor": "An amazing plugin for testing",
+    "update": "1697543711485",
+    "version": "1.2.0",
+    "tag": [
+      "utility"
+    ]
+  },
+  "plugin-2": {
+    "name": "Super Toolset",
+    "author": "coder123",
+    "icon": "toolbox",
+    "descriptor": "Boost your productivity with this toolset",
+    "update": "1697543711485",
+    "version": "2.1.0",
+    "tag": [
+      "productivity"
+    ]
+  },
+  "plugin-3": {
+    "name": "Data Cruncher",
+    "author": "analyticsPro",
+    "icon": "chart-bar",
+    "descriptor": "Plugin for data analysis and crunching",
+    "update": "1697543711485",
+    "version": "0.5.0",
+    "tag": [
+      "data-analysis"
+    ]
+  },
+  "plugin-4": {
+    "name": "Security Guardian",
+    "author": "securityExpert",
+    "icon": "shield-alt",
+    "descriptor": "Enhance your application's security",
+    "update": "1697543711485",
+    "version": "1.0.0",
+    "tag": [
+      "security"
+    ]
+  },
+  "plugin-5": {
+    "name": "Social Sharer",
+    "author": "socialGuru",
+    "icon": "share-alt",
+    "descriptor": "Share content easily on social media",
+    "update": "1697543711485",
+    "version": "3.0.0",
+    "tag": [
+      "social-media"
+    ]
+  },
+  "plugin-6": {
+    "name": "Code Inspector",
+    "author": "codeReviewer",
+    "icon": "code",
+    "descriptor": "Review and analyze your codebase",
+    "update": "1697543711485",
+    "version": "1.5.0",
+    "tag": [
+      "code-review"
+    ]
+  },
+  "plugin-7": {
+    "name": "AI Assistant",
+    "author": "aiEnthusiast",
+    "icon": "robot",
+    "descriptor": "Your virtual assistant powered by AI",
+    "update": "1697543711485",
+    "version": "2.2.0",
+    "tag": [
+      "artificial-intelligence"
+    ]
+  },
+  "plugin-8": {
+    "name": "Image Editor Pro",
+    "author": "designMaster",
+    "icon": "image",
+    "descriptor": "Professional image editing capabilities",
+    "update": "1697543711485",
+    "version": "1.8.0",
+    "tag": [
+      "design"
+    ]
+  },
+  "plugin-9": {
+    "name": "Language Translator",
+    "author": "linguistPro",
+    "icon": "language",
+    "descriptor": "Translate text between multiple languages",
+    "update": "1697543711485",
+    "version": "2.5.0",
+    "tag": [
+      "translation"
+    ]
+  },
+  "plugin-10": {
+    "name": "Weather Tracker",
+    "author": "weatherGeek",
+    "icon": "sun",
+    "descriptor": "Stay updated with real-time weather information",
+    "update": "1697543711485",
+    "version": "1.1.0",
+    "tag": [
+      "weather"
+    ]
+  },
+  "plugin-11": {
+    "name": "Finance Manager",
+    "author": "financePro",
+    "icon": "dollar-sign",
+    "descriptor": "Manage your finances with ease",
+    "update": "1697543711485",
+    "version": "1.7.0",
+    "tag": [
+      "finance"
+    ]
+  },
+  "plugin-12": {
+    "name": "Task Scheduler",
+    "author": "organizer",
+    "icon": "clock",
+    "descriptor": "Efficiently schedule and manage your tasks",
+    "update": "1697543711485",
+    "version": "2.0.0",
+    "tag": [
+      "task-management"
+    ]
+  },
+  "plugin-13": {
+    "name": "Game Booster",
+    "author": "gamerPro",
+    "icon": "gamepad",
+    "descriptor": "Optimize your system for gaming performance",
+    "update": "1697543711485",
+    "version": "1.3.0",
+    "tag": [
+      "gaming"
+    ]
+  },
+  "plugin-14": {
+    "name": "Health Monitor",
+    "author": "healthExpert",
+    "icon": "heartbeat",
+    "descriptor": "Keep track of your health metrics",
+    "update": "1697543711485",
+    "version": "1.4.0",
+    "tag": [
+      "health"
+    ]
+  },
+  "plugin-15": {
+    "name": "Chatbot Companion",
+    "author": "chatbotFan",
+    "icon": "comments",
+    "descriptor": "Converse with your virtual chatbot companion",
+    "update": "1697543711485",
+    "version": "2.3.0",
+    "tag": [
+      "chatbot"
+    ]
+  },
+  "plugin-16": {
+    "name": "Education Hub",
+    "author": "eduMaster",
+    "icon": "graduation-cap",
+    "descriptor": "Access a wealth of educational resources",
+    "update": "1697543711485",
+    "version": "1.6.0",
+    "tag": [
+      "education"
+    ]
+  },
+  "plugin-17": {
+    "name": "Travel Planner",
+    "author": "travelerX",
+    "icon": "plane",
+    "descriptor": "Plan your next adventure with ease",
+    "update": "1697543711485",
+    "version": "2.4.0",
+    "tag": [
+      "travel"
+    ]
+  },
+  "plugin-18": {
+    "name": "Recipe Book",
+    "author": "chefExtraordinaire",
+    "icon": "utensils",
+    "descriptor": "Discover and save delicious recipes",
+    "update": "1697543711485",
+    "version": "1.9.0",
+    "tag": [
+      "cooking"
+    ]
+  },
+  "plugin-19": {
+    "name": "Virtual Drum Kit",
+    "author": "musicianPro",
+    "icon": "drum",
+    "descriptor": "Play the drums in a virtual environment",
+    "update": "1697543711485",
+    "version": "1.0.1",
+    "tag": [
+      "music"
+    ]
+  },
+  "plugin-20": {
+    "name": "Language Learning Assistant",
+    "author": "polyglotLearner",
+    "icon": "book",
+    "descriptor": "Assist in learning new languages effectively",
+    "update": "1697543711485",
+    "version": "2.6.0",
+    "tag": [
+      "language-learning"
+    ]
+  },
+  "plugin-21": {
+    "name": "Fitness Tracker",
+    "author": "fitnessEnthusiast",
+    "icon": "dumbbell",
+    "descriptor": "Track your fitness journey with precision",
+    "update": "1697543711485",
+    "version": "1.0.2",
+    "tag": [
+      "fitness"
+    ]
+  },
+  "小游戏": {
+    "tag": [
+      "test",
+      "games"
+    ],
+    "author": "春风效率",
+    "wiki": "",
+    "authorId": "66ccff"
+  }
+}
