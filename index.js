@@ -54,7 +54,8 @@ app.post('/newPlugin', upload.single('file'), (req, res) => {
             config.tag.custom.push(element);
         }
     });
-
+    config.update = Date.now();
+    
     const { authorId } = req.body;
     list[name] = {};
 
