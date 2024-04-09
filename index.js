@@ -27,7 +27,7 @@ app.post('/newPlugin', upload.single('file'), (req, res) => {
     const file = req.file;
     req.body.tag = JSON.parse(req.body.tag);
     const { tag, name } = req.body;
-
+    console.log(req.body)
 
     // 是否未上传文件
     if (!file)
@@ -54,11 +54,11 @@ app.post('/newPlugin', upload.single('file'), (req, res) => {
             config.tag.custom.push(element);
         }
     });
-    config.update = Date.now();
-    
+
+
     const { authorId } = req.body;
     list[name] = {};
-
+    
     const filedir = path.join('./plugin/src/' + `${authorId}`);
     const fileSavePath = path.join('./plugin/src/' + `${authorId}/${name}.json`);
     // 重命名上传文件
@@ -68,7 +68,7 @@ app.post('/newPlugin', upload.single('file'), (req, res) => {
 
     // author, name, wiki, authorId, tag
     Object.keys(req.body).forEach(v => {
-        if (v == 'name' || v == 'file')
+        if (v == 'file')
         {
             return;
         }
@@ -76,6 +76,7 @@ app.post('/newPlugin', upload.single('file'), (req, res) => {
             list[name][v] = req.body[v];
         }
     });
+    list[name].update = Date.now(); 
     uploadJson(path.join('./plugin', 'config.json'), config);
     uploadJson(path.join('./plugin', 'list.json'), list);
 });
