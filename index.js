@@ -30,8 +30,7 @@ app.post('/newPlugin', upload.single('file'), (req, res) => {
     console.log(req.body)
 
     // 是否未上传文件
-    if (!file)
-    {
+    if (!file) {
         console.log('No file uploaded.');
         return res.status(400);
     }
@@ -40,8 +39,7 @@ app.post('/newPlugin', upload.single('file'), (req, res) => {
     const config = getJson(path.join('./plugin', 'config.json'));
 
     // 名称存在
-    if (Object.keys(list).includes(name))
-    {
+    if (Object.keys(list).includes(name)) {
         fs.unlinkSync(file.path);
         console.log(`[${name}] Name already exists`);
         return res.status(400);
@@ -49,8 +47,7 @@ app.post('/newPlugin', upload.single('file'), (req, res) => {
 
     // 新增不存在的tag
     tag.forEach(element => {
-        if (config.tag.system.includes(element) < 0)
-        {
+        if (config.tag.system.includes(element) < 0) {
             config.tag.custom.push(element);
         }
     });
@@ -58,25 +55,26 @@ app.post('/newPlugin', upload.single('file'), (req, res) => {
 
     const { authorId } = req.body;
     list[name] = {};
-    
+
+    const baseDir = path.join('./plugin/src/')
     const filedir = path.join('./plugin/src/' + `${authorId}`);
     const fileSavePath = path.join('./plugin/src/' + `${authorId}/${name}.json`);
     // 重命名上传文件
+    if (!fs.existsSync(baseDir)) { fs.mkdirSync(baseDir); }
     if (!fs.existsSync(filedir)) { fs.mkdirSync(filedir); }
 
     fs.renameSync(file.path, fileSavePath);
 
     // author, name, wiki, authorId, tag
     Object.keys(req.body).forEach(v => {
-        if (v == 'file')
-        {
+        if (v == 'file') {
             return;
         }
         {
             list[name][v] = req.body[v];
         }
     });
-    list[name].update = Date.now(); 
+    list[name].update = Date.now();
     uploadJson(path.join('./plugin', 'config.json'), config);
     uploadJson(path.join('./plugin', 'list.json'), list);
 });
@@ -96,8 +94,7 @@ app.get('/rmPlugin', (req, res) => {
 
     list[fileName].tag.forEach(v => {
         const index = config.tag.custom.includes(v);
-        if (index >= 0)
-        {
+        if (index >= 0) {
             config.tag.custom.splice(index, 1);
         }
     });
