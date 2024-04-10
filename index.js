@@ -27,7 +27,7 @@ app.post('/newPlugin', upload.single('file'), (req, res) => {
     const file = req.file;
     req.body.tag = JSON.parse(req.body.tag);
     const { tag, name } = req.body;
-    console.log(req.body)
+    // console.log(req.body)
 
     // 是否未上传文件
     if (!file) {
